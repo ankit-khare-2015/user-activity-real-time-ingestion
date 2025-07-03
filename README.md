@@ -2,6 +2,9 @@
 
 This project implements a **fully automated, containerized real-time data processing pipeline** for user activity tracking. It leverages **Kafka**, **PostgreSQL**, **Grafana**, and **Python-based producer/consumer** services.
 
+> ![Dashboard](docs/dashboard.png)
+
+
 > ✅ Once set up with `docker-compose up --build`, everything is ready to use — including dashboards with some little modifcation and live data.
 
 ---
@@ -152,7 +155,6 @@ Grafana dashboard contains **5 visual reports**:
 ---
 
 ## 🧗 Challenges Faced
-
 - Grafana YAML file was initially misconfigured as a directory mount — fixed by renaming and avoiding conflict
 - Getting full automation (topic creation, provisioning, dashboards) to work required careful service order
 - Getting kafka to start took some work due to misconfiguration 
