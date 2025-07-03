@@ -5,7 +5,7 @@ This project implements a **fully automated, containerized real-time data proces
 > ![Dashboard](docs/dashboard.png)
 
 
-> ✅ Once set up with `docker-compose up --build`, everything is ready to use — including dashboards with some little modifcation and live data.
+> Once set up with `docker-compose up --build`, everything is ready to use — including dashboards with some little modifcation and live data.
 
 ---
 
@@ -24,7 +24,7 @@ This project implements a **fully automated, containerized real-time data proces
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 Based on the problem statement we need to do below 
 > - Simulates user events (click, view, scroll)
@@ -34,7 +34,7 @@ Based on the problem statement we need to do below
 
 ---
 
-## ✅ Solution Overview
+## Solution Overview
 
 This application:
 - Simulates random user activity events via a Python **python/producer.py**
@@ -58,12 +58,12 @@ docker-compose up --build
 
 ---
 
-## 🧱 Architecture Diagram
+## Architecture Diagram
 
 > ![Architecture](docs/High-level-design.png)
 
 ---
-## 🗃️ Database Schema 
+## Database Schema 
 
 `user_event_summary`
 
@@ -79,7 +79,7 @@ docker-compose up --build
 
 ---
 
-## ⚙️ Components
+## Components
 
 | Component      | Tech Used         | Description                                           |
 |----------------|------------------|-------------------------------------------------------|
@@ -92,7 +92,7 @@ docker-compose up --build
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone this repository
 2. Make sure Docker & Docker Compose are installed
@@ -132,7 +132,7 @@ docker-compose up --build
 
 ---
 
-## 📈 Prebuilt Dashboards
+## Prebuilt Dashboards
 
 Grafana dashboard contains **5 visual reports**:
 1. Total events processed today
@@ -145,7 +145,7 @@ Grafana dashboard contains **5 visual reports**:
 
 ---
 
-## 📎 Assumptions
+##  Assumptions
 
 - Kafka topic `user_activity` is created dynamically at container startup
 - PostgreSQL and Grafana run with default credentials
@@ -154,7 +154,7 @@ Grafana dashboard contains **5 visual reports**:
 
 ---
 
-## 🧗 Challenges Faced
+##  Challenges Faced
 - Grafana YAML file was initially misconfigured as a directory mount — fixed by renaming and avoiding conflict
 - Getting full automation (topic creation, provisioning, dashboards) to work required careful service order
 - Getting kafka to start took some work due to misconfiguration 
@@ -162,7 +162,7 @@ Grafana dashboard contains **5 visual reports**:
 
 ---
 
-## 🛣️ What's Could be done more 
+##  What's Could be done more 
 
 - Add Prometheus for advanced alerting
 - Persist dashboards and metrics using Grafana volumes
@@ -170,6 +170,6 @@ Grafana dashboard contains **5 visual reports**:
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 Ankit Khare
