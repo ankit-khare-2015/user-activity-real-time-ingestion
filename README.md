@@ -55,7 +55,7 @@ docker-compose up --build
 ---
 
 ## 🧱 Architecture Diagram
- 
+
 > ![Architecture](docs/High-level-design.png)
 
 ---
@@ -83,22 +83,41 @@ docker-compose up --build
 docker-compose down -v  # optional: clean start
 docker-compose up --build
 ```
+4. Confirm Event Logs in Console as show in below screen capture
+> ![user activity events](docs/Succes.png)
 
-4. Open Grafana at [http://localhost:3000](http://localhost:3000)  
+5. Open Grafana at [http://localhost:3000](http://localhost:3000)  
    Login: `admin` / `admin`
+
+   Go to Settings → Data Sources
+
+   Confirm that the PostgreSQL data source is present and connected> 
+   ![provisioned datasource](docs/postgres-datasource-in-grafana.png)
+6. Go to Dashboards → Browse
+
+   Open the Provisioned Dashboard
+
+   Confirm the provisioned dashboard
+   ![provisioned dashboard](docs/Provisioned-dashboard.png)
+
+7. Evrything is automated on below two update are needed at each visual 
+   1. click on three dots and then click  on edit 
+   ![click edit](docs/click-edit.png)
+   2. Then clieck on  back to dashboard and the visual will have the data 
+   ![click back to dashboard](docs/click-back-to-dashboard.png)
 
 ---
 
 ## 📈 Prebuilt Dashboards
 
 Grafana dashboard contains **5 visual reports**:
-1. 📊 Total events processed today
-2. ⏱️ Event rate per minute
-3. 🧩 Event distribution by type
-4. 👤 Top 5 active users (last hour)
-5. 📆 Data volume growth over time
+1. Total events processed today
+2. Event rate per minute
+3. Event distribution by type
+4. Top 5 active users (last hour)
+5. Data volume growth over time
 
-> All are auto-loaded via provisioning. Just a little update is required as mentioned below 
+> All are auto-loaded via provisioning. Just a little update is required as documented how to run sections
 
 ---
 
