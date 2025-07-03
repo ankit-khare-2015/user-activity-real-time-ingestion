@@ -55,9 +55,8 @@ docker-compose up --build
 ---
 
 ## 🧱 Architecture Diagram
-
-🖼️ *[Add your high-level architecture image here]*  
-> `![Architecture](docs/High-level-design.png)`
+ 
+> ![Architecture](docs/High-level-design.png)
 
 ---
 
