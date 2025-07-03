@@ -11,12 +11,13 @@ This project implements a **fully automated, containerized real-time data proces
 1. [Problem Statement](#problem-statement)
 2. [Solution Overview](#solution-overview)
 3. [Architecture Diagram](#architecture-diagram)
-4. [Components](#components)
-5. [How to Run](#how-to-run)
-6. [Prebuilt Dashboards](#prebuilt-dashboards)
-7. [Assumptions](#assumptions)
-8. [Challenges Faced](#challenges-faced)
-9. [What's Next](#whats-next)
+4. [Database Schema](#database-schema)
+5. [Components](#components)
+6. [How to Run](#how-to-run)
+7. [Prebuilt Dashboards](#prebuilt-dashboards)
+8. [Assumptions](#assumptions)
+9. [Challenges Faced](#challenges-faced)
+10. [What's Could be done more ](#whats-next)
 
 ---
 
@@ -59,6 +60,21 @@ docker-compose up --build
 > ![Architecture](docs/High-level-design.png)
 
 ---
+## 🗃️ Database Schema 
+
+`user_event_summary`
+
+| Column Name   | Data Type  | Description                        |
+|---------------|------------|------------------------------------|
+| `user_id`     | TEXT       | Unique identifier of the user      |
+| `event_hour`  | TIMESTAMP  | Timestamp rounded to the hour      |
+| `event_minute`| TIMESTAMP  | Timestamp rounded to the minute    |
+| `event_type`  | TEXT       | Type of event (click, view, scroll)|
+| `event_count` | INT        | Number of such events              |
+
+> 🔑 Primary Key: (`user_id`, `event_minute`, `event_type`)
+
+---
 
 ## ⚙️ Components
 
@@ -91,17 +107,22 @@ docker-compose up --build
 
    Go to Settings → Data Sources
 
-   Confirm that the PostgreSQL data source is present and connected> 
-   ![provisioned datasource](docs/postgres-datasource-in-grafana.png)
+   Confirm that the PostgreSQL data source is present and connected 
+   ```bash
+   psql -h localhost -p 5432 -U postgres -d events
+   password > postgres
+   ```
+
+   > ![provisioned datasource](docs/postgres-datasource-in-grafana.png)
 6. Go to Dashboards → Browse
 
    Open the Provisioned Dashboard
 
    Confirm the provisioned dashboard
-   ![provisioned dashboard](docs/Provisioned-dashboard.png)
+   > ![provisioned dashboard](docs/Provisioned-dashboard.png)
 
 7. Everything is automated on below two update are needed at each visual 
-   1. click on three dots and then click  on edit 
+   1. Click on three dots and then click  on edit 
    > ![click edit](docs/click-edit.png)
    2. Then click on  back to dashboard and the visual will have the data 
    > ![click back to dashboard](docs/click-back-to-dashboard.png)
