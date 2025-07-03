@@ -34,9 +34,9 @@ Based on the problem statement we need to do below
 ## ✅ Solution Overview
 
 This application:
-- Simulates random user activity events via a Python **producer**
+- Simulates random user activity events via a Python **python/producer.py**
 - Publishes them to a Kafka topic: `user_activity`
-- Consumes them using a Python **consumer**
+- Consumes them using a Python **python/consumer.py**
 - Stores processed events into a **PostgreSQL** table
 - Automatically provisions a **Grafana dashboard** with 5 key reports
 - All components are managed using **Docker Compose**
