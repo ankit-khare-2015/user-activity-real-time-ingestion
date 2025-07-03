@@ -100,11 +100,11 @@ docker-compose up --build
    Confirm the provisioned dashboard
    ![provisioned dashboard](docs/Provisioned-dashboard.png)
 
-7. Evrything is automated on below two update are needed at each visual 
+7. Everything is automated on below two update are needed at each visual 
    1. click on three dots and then click  on edit 
-   ![click edit](docs/click-edit.png)
-   2. Then clieck on  back to dashboard and the visual will have the data 
-   ![click back to dashboard](docs/click-back-to-dashboard.png)
+   > ![click edit](docs/click-edit.png)
+   2. Then click on  back to dashboard and the visual will have the data 
+   > ![click back to dashboard](docs/click-back-to-dashboard.png)
 
 ---
 
