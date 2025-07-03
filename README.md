@@ -130,6 +130,9 @@ docker-compose up --build
    2. Then click on  back to dashboard and the visual will have the data 
    > ![click back to dashboard](docs/click-back-to-dashboard.png)
 
+For more details 
+[![Watch the video](https://www.youtube.com/watch?v=gHdZAeGFRuk/0.jpg)](https://www.youtube.com/watch?v=gHdZAeGFRuk)
+
 ---
 
 ## Prebuilt Dashboards
