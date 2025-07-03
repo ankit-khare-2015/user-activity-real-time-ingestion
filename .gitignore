@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.pyo
+
+# Virtual environments
+venv/
+.env/
+
+# Docker
+**/.DS_Store
+docker-compose.override.yml
+docker-compose.override.yaml
+*.pid
+*.log
+
+# Docker volumes (optional)
+grafana-storage/
+pgdata/
+volumes/
+
+# VS Code and JetBrains project files
+.vscode/
+.idea/
+
+# Node/npm (if any web UI components added)
+node_modules/
+dist/
+build/
+
+# Local database or output artifacts
+*.db
+*.sqlite
+*.csv
+
+# Grafana session/state
+grafana/grafana.db
+grafana/grafana.ini
+grafana/plugins/
+
+# Python package build artifacts
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# System and editor files
+*.swp
+*~
+*.bak
+Thumbs.db
+.DS_Store
+
+# Logs and temp files
+*.log
+*.tmp
+logs/
+tmp/
