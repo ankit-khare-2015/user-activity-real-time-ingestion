@@ -17,10 +17,11 @@ This project implements a **fully automated, containerized real-time data proces
 4. [Database Schema](#database-schema)
 5. [Components](#components)
 6. [How to Run](#how-to-run)
-7. [Prebuilt Dashboards](#prebuilt-dashboards)
-8. [Assumptions](#assumptions)
-9. [Challenges Faced](#challenges-faced)
-10. [What's Could be done more ](#whats-next)
+7. [Demo Video](#demo-video)
+8. [Prebuilt Dashboards](#prebuilt-dashboards)
+9. [Assumptions](#assumptions)
+10. [Challenges Faced](#challenges-faced)
+11. [What's Could be done more ](#whats-next)
 
 ---
 
@@ -130,7 +131,11 @@ docker-compose up --build
    2. Then click on  back to dashboard and the visual will have the data 
    > ![click back to dashboard](docs/click-back-to-dashboard.png)
 
-For Running the build and fixing the reports please watch below youtube video that i have uploaded  :
+
+##  Demo Video
+
+To run the build and fix the reports, please watch the YouTube video below that I’ve uploaded:
+
 > [![Watch the video](https://img.youtube.com/vi/gHdZAeGFRuk/0.jpg)](https://www.youtube.com/watch?v=gHdZAeGFRuk)
 
 ---
