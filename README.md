@@ -5,7 +5,7 @@ This project implements a **fully automated, containerized real-time data proces
 > ![Dashboard](docs/dashboard.png)
 
 
-> Once set up with `docker-compose up --build`, everything is ready to use — including dashboards with some little modifcation and live data.
+> Once set up with `docker-compose up --build`, everything is ready to use — including dashboards with some little modification.
 
 ---
 
@@ -27,7 +27,6 @@ This project implements a **fully automated, containerized real-time data proces
 
 ## Problem Statement
 
-Based on the problem statement we need to do below 
 > - Simulates user events (click, view, scroll)
 > - Uses Kafka for message transport
 > - Stores processed data in a database
@@ -103,7 +102,7 @@ docker-compose up --build
 docker-compose down -v  # optional: clean start
 docker-compose up --build
 ```
-4. Confirm Event Logs in Console as show in below screen capture
+4. Confirm Event Logs in Console as shown in the below screen capture
 > ![user activity events](docs/Succes.png)
 
 5. Open Grafana at [http://localhost:3000](http://localhost:3000)  
@@ -125,10 +124,10 @@ docker-compose up --build
    Confirm the provisioned dashboard
    > ![provisioned dashboard](docs/Provisioned-dashboard.png)
 
-7. Everything is automated on below two update are needed at each visual 
+7. Everything is automated. on two updates below are needed at each visual 
    1. Click on three dots and then click  on edit 
    > ![click edit](docs/click-edit.png)
-   2. Then click on  back to dashboard and the visual will have the data 
+   2. Then click on  back to dashboard, and the visual will have the data 
    > ![click back to dashboard](docs/click-back-to-dashboard.png)
 
 
@@ -149,7 +148,7 @@ Grafana dashboard contains **5 visual reports**:
 4. Top 5 active users (last hour)
 5. Data volume growth over time
 
-> All are auto-loaded via provisioning. Just a little update is required as documented how to run sections
+> All are auto-loaded via provisioning. Just a little update is required, as documented on how to run sections
 
 ---
 
@@ -165,12 +164,12 @@ Grafana dashboard contains **5 visual reports**:
 ##  Challenges Faced
 - Grafana YAML file was initially misconfigured as a directory mount — fixed by renaming and avoiding conflict
 - Getting full automation (topic creation, provisioning, dashboards) to work required careful service order
-- Getting kafka to start took some work due to misconfiguration 
-- Auto Provision of reports also needed a steep learning curve and took time and works partially with a little change at the end 
+- Getting Kafka to start took some work due to misconfiguration 
+- Auto Provision of reports also needed a steep learning curve and took time and worked partially with a little change at the end 
 
 ---
 
-##  What's Could be done more 
+##  What could be done more 
 
 - Add Prometheus for advanced alerting
 - Persist dashboards and metrics using Grafana volumes
